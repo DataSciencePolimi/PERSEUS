@@ -2,7 +2,7 @@
 
 <img src="./readme_img/Logo-PERSEUS.png" width="200">
 
-PERSEUS – Public Engagement for Responsive and Shared European Union Strategies - is an integrated toolkit for participatory and strategic decision-making at the EU level. This tool incorporate the AGGREGATOR database, the COCTEAU app and the feedback provided to policymakers, a data anlysis pipeline applied to analyse the COP26 event on social media (i.e., Twitter), and the information and tools developed in the TRIGGER project. The tool also include an archive of documents and sources about the TRIGGER project and policymaking.
+PERSEUS – Public Engagement for Responsive and Shared European Union Strategies - is an integrated toolkit for participatory and strategic decision-making at the EU level. This tool incorporates the AGGREGATOR database, the COCTEAU app and the feedback provided to policymakers, a data anlysis pipeline applied to analyse the COP26 event on social media (i.e., Twitter), and the information and tools developed in the TRIGGER project. The tool also include an archive of documents and sources about the TRIGGER project and policymaking.
 
 ## License  
 
