@@ -1,6 +1,6 @@
 # PERSEUS
 
-<img src="./readme_img/Logo-cocteau.png" width="300">
+<img src="./readme_img/Logo-PERSEUS.png" width="300">
 
 ## Method
 
