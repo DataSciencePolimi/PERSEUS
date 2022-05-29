@@ -1,0 +1,119 @@
+<html>
+	<body>
+		<div th:fragment="content" id="visible-content" class="container">
+			<h1 class="mb-4" th:text="#{cop26-fragment.title}"></h1>
+				<h5 class="h5-small" th:utext="#{cop26-fragment.intro}"></h5>
+				
+				<!-- Insert Content Here -->
+				<h3 class="text-center background mt-3"><span th:text="#{cop26-fragment.datavolumes}"></span></h3>
+				<h4 class="h5-small" th:text="#{cop26-fragment.datavolumes-rq}"></h4>
+				<h5 class="h5-small" th:text="#{cop26-fragment.datavolumes-description}"></h5>
+				<div id="data_volumes" class="my-3">
+					
+			    </div>
+				
+				<h3 class="text-center background mt-3"><span th:text="#{cop26-fragment.eumentions}"></span></h3>
+				<h4 class="h5-small" th:text="#{cop26-fragment.eumentions-rq}"></h4>
+				<h5 class="h5-small" th:text="#{cop26-fragment.eumentions-description}"></h5>
+				<span class="h5-small" th:utext="#{cop26-fragment.eumentions-languages}"></span>
+				<div id="eu_mentions" class="my-3">
+			    </div>
+			    
+			    <h3 class="text-center background mt-3"><span th:text="#{cop26-fragment.eumentions-overtime}"></span></h3>
+				<h5 class="h5-small" th:text="#{cop26-fragment.eumentions-overtime-description}"></h5>
+				<div id="eu_mentions_over_time" class="my-3">
+			    </div>
+			    
+			    <h3 class="text-center background mt-3"><span th:text="#{cop26-fragment.climatechange}"></span></h3>
+			    <h4 class="h5-small" th:text="#{cop26-fragment.climatechange-rq}"></h4>
+			    <h5 class="h5-small" th:text="#{cop26-fragment.climatechange-description}"></h5>
+				<div id="climate_change_sentiment" class="my-3">
+					
+			    </div>
+			    
+			    <h3 class="text-center background mt-3"><span th:text="#{cop26-fragment.climatechange-overtime}"></span></h3>
+			    <h5 class="h5-small" th:text="#{cop26-fragment.climatechange-description-overtime}"></h5>
+				<div id="climate_change_sentiment_over_time" class="my-3">
+					
+			    </div>
+			    
+			    <h3 class="text-center background mt-3"><span th:text="#{cop26-fragment.climatepolicy}"></span></h3>
+			    <h4 class="h5-small" th:text="#{cop26-fragment.climatepolicy-rq}"></h4>
+			    <h5 class="h5-small" th:text="#{cop26-fragment.climatepolicy-description}"></h5>
+				<div id="climate_policy_sentiment" class="my-3">
+			    </div>
+			    
+			    <h3 class="text-center background mt-3"><span th:text="#{cop26-fragment.climatepolicy-overtime}"></span></h3>
+			    <h5 class="h5-small" th:text="#{cop26-fragment.climatepolicy-description-overtime}"></h5>
+				<div id="climate_policy_sentiment_over_time" class="my-3">
+			    </div>
+			    
+			    <h3 class="text-center background mt-3"><span th:text="#{cop26-fragment.topicdata}"></span></h3>
+			    <h4 class="h5-small" th:text="#{cop26-fragment.topicdata-rq}"></h4>
+			    <h5 class="h5-small" th:text="#{cop26-fragment.topicdata-description}"></h5>
+			    <div class="d-flex justify-content-center my-3">
+				    <select name="topic" id="topic-select" class="mx-4">
+						<option value="1"  th:text="#{cop26-fragment.ccag}"></option>
+						<option value="2" th:text="#{cop26-fragment.cpi}"></option>
+						<option value="3" th:text="#{cop26-fragment.mp}"></option>
+						<option value="4" th:text="#{cop26-fragment.sec}"></option>
+						<option value="5" th:text="#{cop26-fragment.amb}"></option>
+						<option value="6" th:text="#{cop26-fragment.cd}"></option>
+					</select>
+					<select name="topic-type" id="topic-type" class="mx-4">
+						<option value="1"  th:text="#{cop26-fragment.complete}"></option>
+						<option value="2" th:text="#{cop26-fragment.individual}"></option>
+					</select>
+				</div>
+				<span id="k-1" class="h5-small" th:utext="#{cop26-fragment.topicdata-1}"></span>
+				<span id="k-2" class="h5-small hidden" th:utext="#{cop26-fragment.topicdata-2}"></span>
+				<span id="k-3" class="h5-small hidden" th:utext="#{cop26-fragment.topicdata-3}"></span>
+				<span id="k-4" class="h5-small hidden" th:utext="#{cop26-fragment.topicdata-4}"></span>
+				<span id="k-5" class="h5-small hidden" th:utext="#{cop26-fragment.topicdata-5}"></span>
+				<span id="k-6" class="h5-small hidden" th:utext="#{cop26-fragment.topicdata-6}"></span>
+				<div id="topic_data" class="my-3">
+			    </div>
+			    
+			    <h3 class="text-center background mt-3"><span th:text="#{cop26-fragment.topicdata-summary}"></span></h3>
+			    <h5 class="h5-small" th:text="#{cop26-fragment.topicdata-description-summary}"></h5>
+				<div id="topic_data_summary" class="my-3">
+		    	</div>
+		    
+		    <!-- Google Charts Scripts -->
+		    <script type="text/javascript" src="js/cop26-analysis-charts-js.js"></script>
+
+	    	<script type="text/javascript" th:inline="javascript">
+		    	var authenticated = /*[[${
+										authenticated
+									}]]*/ false;
+		    	
+		    	function getVisualizations() {
+		    		
+		    		if(!authenticated) {
+		    			$.ajax({
+			        		type: "GET",
+			        		url: "/getCop26VizAuth",
+			        		success: function(fragment){
+			        			$('#visible-content').replaceWith(fragment);
+			        			
+			        			drawDashboard()
+			        		}
+			        	});
+		    		}
+		        	
+		    	}
+	    	
+	    		// Load the Visualization API and the controls package.
+		    	function loadGoogle() {
+		    		google.charts.load('current', {
+		    	        'packages':['line', 'corechart', 'bar'],
+		    	    });
+		    		
+		    		getVisualizations();
+		    	}
+		    	
+		        loadGoogle();
+	    	</script>
+		</div>
+	</body>
+</html>

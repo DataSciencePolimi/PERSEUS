@@ -1,0 +1,180 @@
+<html>
+	<body>
+		<div th:fragment="content" id="visible-content" class="container">
+			<h1 th:text="${title}"></h1>
+			
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-8 text-center">
+					<h4 class="d-flex justify-content-center" th:text="#{case-fragment.scenario}"></h4>
+					<form action="/getCaseViz" method="GET" id="updateScenarioForm" class="d-flex justify-content-center">
+						<input type="hidden" id="narrative" name="narrative" th:value="${narrative}">
+						<select class="form-control" id="currentScenario" name="currentScenario">
+							<option th:each="s : ${scenarios}" th:selected="${s[0] == active}" th:text="${s[1]}" th:value="${s[0]}"></option>
+					    </select>
+					</form>
+				</div>
+				<div class="col-12 col-sm-12 col-md-4 text-center">
+					<h4 class="spacing-top" th:text="#{case-fragment.n-users}"></h4>
+					<h4 id="n-users"></h4>
+				</div>
+			</div>
+			
+			<h3 class="text-center background mt-3"><span th:text="#{case-fragment.quiz-answers}"></span></h3>
+			<h5 class="h5-small" th:text="#{case-fragment.quiz-answers-description}"></h5>
+			<div id="quiz-answers" class="my-3">
+				<div id="user_filter_div" class="text-center d-flex justify-content-center align-content-center">
+					<label for="gender" class="mb-0 mx-3">Gender</label>
+					<select name="gender" id="gender_filter">
+						<option value="0" selected>No Filter</option>
+					  	<option value="M">Male</option>
+						<option value="F">Female</option>
+					</select>
+					<label for="age" class="mb-0 mx-3">Age</label>
+					<select name="age" id="age_filter">
+					  	<option value="0" selected>No Filter</option>
+						<option value="1">Under 20</option>
+						<option value="2">21 - 30</option>
+						<option value="3">31 - 40</option>
+						<option value="4">41 - 50</option>
+						<option value="5">51 - 60</option>
+						<option value="6">61 - 70</option>
+						<option value="7">71 - 80</option>
+						<option value="8">Over 80</option>
+					</select>
+					<label for="nationality" class="mb-0 mx-3">Nationality</label>
+					<select name="nationality" id="nationality_filter">
+						<option value="0" selected>No Filter</option>
+						<option value="Eu">Eu</option>
+						<option value="Non-Eu">Non-Eu</option>
+					</select>
+				</div>
+	      		<div id="filter_div" class="text-center"></div>
+		      	<div id="chart_div" class="mt-3"></div>
+		    </div>
+		    
+		    <h3 class="text-center background mt-3"><span th:text="#{case-fragment.quick-stats-text-and-graph}"></span></h3>
+			<h5 class="h5-small" th:text="#{case-fragment.quick-stats-text-and-graph-description}"></h5>
+			<div id="quick-stats-text-and-graph" class="my-3 d-flex justify-content-center">
+				<div class="col-12 col-sm-12 col-md-4 text-center">
+					<h4 class="spacing-top" th:text="#{case-fragment.n-visions}"></h4>
+					<h4 id="n-visions"></h4>
+				</div>
+				<div class="col-12 col-sm-12 col-md-4 text-center">
+					<h4 class="spacing-top" th:text="#{case-fragment.n-matches}"></h4>
+					<h4 id="n-matches"></h4>
+				</div>
+				<div class="col-12 col-sm-12 col-md-4 text-center">
+					<h4 class="spacing-top" th:text="#{case-fragment.emp-perc}"></h4>
+					<h4 id="emp-perc"></h4>
+				</div>
+		    </div>
+		    
+		    <h3 class="text-center background mt-3"><span th:text="#{case-fragment.empathy-distribution}"></span></h3>
+			<h5 class="h5-small" th:text="#{case-fragment.empathy-distribution-description}"></h5>
+			<div id="empathy-distribution" class="my-3">
+				
+		    </div>
+		    
+		    <h3 class="text-center background mt-3"><span th:text="#{case-fragment.vision-count-over-time}"></span></h3>
+			<h5 class="h5-small" th:text="#{case-fragment.vision-count-over-time-description}"></h5>
+			<div class="d-flex justify-content-center align-content-center my-3">
+				<label for="start_date_vision" class="mb-0 mx-3">Start Date:</label>
+				<input type="date" id="start_date_vision">
+				<label for="end_date_vision" class="mb-0 mx-3">End Date:</label>
+				<input type="date" id="end_date_vision">
+			</div>
+			<div id="vision-count-over-time" class="my-3">
+		    </div>
+		    
+		    <h3 class="text-center background mt-3"><span th:text="#{case-fragment.matches-played-over-time}"></span></h3>
+			<h5 class="h5-small" th:text="#{case-fragment.matches-played-over-time-description}"></h5>
+			<div class="d-flex justify-content-center align-content-center my-3">
+				<label for="start_date_match" class="mb-0 mx-3">Start Date:</label>
+				<input type="date" id="start_date_match">
+				<label for="end_date_match" class="mb-0 mx-3">End Date:</label>
+				<input type="date" id="end_date_match">
+			</div>
+			<div id="matches-played-over-time" class="my-3">
+		    </div>
+		    
+		    <h3 class="text-center background mt-3"><span th:text="#{case-fragment.matches-graph}"></span></h3>
+			<h5 class="h5-small" th:text="#{case-fragment.matches-graph-description}"></h5>
+			<svg id="matches-graph" class="my-3" style="background-color:white;">
+		    </svg>
+			
+			<h3 class="text-center background mt-3"><span th:text="#{case-fragment.feelings-pie-chart}"></span></h3>
+			<h5 class="h5-small" th:text="#{case-fragment.feelings-pie-chart-description}"></h5>
+			<div id="feelings-pie-chart" class="my-3">
+		    </div>
+			
+		    <h3 class="text-center background mt-3"><span th:text="#{case-fragment.vision-feelings-over-time}"></span></h3>
+			<h5 class="h5-small" th:text="#{case-fragment.vision-feelings-over-time-description}"></h5>
+			<div class="d-flex justify-content-center align-content-center my-3">
+				<label for="start_date_vision_feelings" class="mb-0 mx-3">Start Date:</label>
+				<input type="date" id="start_date_vision_feelings">
+				<label for="end_date_vision_feelings" class="mb-0 mx-3">End Date:</label>
+				<input type="date" id="end_date_vision_feelings">
+			</div>
+			<div id="vision-feelings-over-time" class="my-3">
+		    </div>
+		    
+		    <h3 class="text-center background mt-3"><span th:text="#{case-fragment.most-used-keywords}"></span></h3>
+			<h5 class="h5-small" th:text="#{case-fragment.most-used-keywords-description}"></h5>
+			<div id="most-used-keywords" class="my-3">
+		    </div>
+			
+			<h3 class="text-center background mt-3"><span th:text="#{case-fragment.most-used-description-words}"></span></h3>
+			<h5 class="h5-small" th:text="#{case-fragment.most-used-description-words-description}"></h5>
+			<div id="most-used-description-words" class="my-3">
+		    </div>
+		    
+<!-- 		    <h3 class="text-center background mt-3"><span th:text="#{case-fragment.top-visions}"></span></h3>
+			<h5 class="h5-small" th:text="#{case-fragment.top-visions-description}"></h5>
+			<div id="top-visions" class="my-3">
+		    </div> -->
+		    
+		    <h3 class="text-center background mt-3"><span th:text="#{case-fragment.sankey-feelings}"></span></h3>
+			<h5 class="h5-small" th:text="#{case-fragment.sankey-feelings-description}"></h5>
+			<div id="sankey-feelings" class="my-3">
+		    </div>
+		    
+		    <!-- <h3 class="text-center background mt-3"><span th:text="#{case-fragment.sentiment-analysis}"></span></h3>
+			<h5 class="h5-small" th:text="#{case-fragment.sentiment-analysis-description}"></h5>
+			<div id="sentiment-analysis" class="my-3">
+		    </div> -->
+		    
+		    <!-- Google Charts Scripts -->
+		    <script type="text/javascript" src="js/case-studies-charts-js.js"></script>
+
+	    	<script type="text/javascript">
+		    	// Load the Visualization API and the controls package.
+		    	function loadGoogle(){
+		    		google.charts.load('current', {
+		    			'packages':['corechart', 'controls', 'sankey']
+		    		});
+		    		
+		    		google.charts.setOnLoadCallback(drawDashboard);
+		    	}
+		        
+		        loadGoogle();
+		        
+		        $('#currentScenario').on('change', function(){
+		        	var value = $("#currentScenario option:selected").val();
+		        	
+		        	$.ajax({
+		        		type: "GET",
+		        		url: "/getCaseViz",
+		        		data: {
+		        			'lang': 'en',
+		        			'narrative': $('#narrative').val(),
+		        			'currentScenario': value
+		        		},
+		        		success: function(fragment){
+		        			$('#visible-content').replaceWith(fragment);
+		        		}
+		        	});
+		        });
+	    	</script>
+		</div>
+	</body>
+</html>

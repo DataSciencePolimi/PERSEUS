@@ -1,0 +1,71 @@
+<html>
+<body>
+    <div th:fragment="content" id="visible-content">
+        <h1 th:text="#{deep-dives-fragment.title}"></h1>
+        <!-- EU related datasets -->
+        <div class="row mx-2 mt-4">
+            <div class="card col-12 px-0">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs navigation" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" href=".intro_to_dd" role="tab" aria-controls="into_to_dd" aria-selected="true" data-toggle="tab" th:text="#{deep-dives-fragment.intro-to-dd-tab}"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=".climate_policy" role="tab" aria-controls="climate_policy" aria-selected="false" data-toggle="tab" th:text="#{deep-dives-fragment.climate-policy-tab}"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href=".sdg" role="tab" aria-controls="sdg" aria-selected="false" data-toggle="tab" th:text="#{deep-dives-fragment.sdg-tab}"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=".dpra" role="tab" aria-controls="dpra" aria-selected="false" data-toggle="tab" th:text="#{deep-dives-fragment.dpra-tab}"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=".data_prot" role="tab" aria-controls="data_prot" aria-selected="false" data-toggle="tab" th:text="#{deep-dives-fragment.data-prot-tab}"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-body">
+                    <div class="tab-content mt-3">
+                        <div class="tab-pane active intro_to_dd" role="tabpanel">
+                            <h4 class="card-title" th:text="#{deep-dives-fragment.intro-to-dd-title}"></h4>
+                            <p class="card-text" th:text="#{deep-dives-fragment.intro-to-dd-desc-1}"></p>
+                            <button class="btn btn-primary deep-dives-btn" th:text="#{deep-dives-fragment.access-data-btn}"></button>
+                        </div>
+
+                        <div class="tab-pane climate_policy" role="tabpanel">
+                            <h4 class="card-title" th:text="#{deep-dives-fragment.climate-policy-title}"></h4>
+                            <p class="card-text" th:text="#{deep-dives-fragment.climate-policy-desc-1}"></p>
+                            <p class="card-text" th:text="#{deep-dives-fragment.climate-policy-desc-2}"></p>
+                            <p class="card-text" th:text="#{deep-dives-fragment.climate-policy-desc-3}"></p>
+                            <button class="btn btn-primary deep-dives-btn" th:text="#{deep-dives-fragment.access-data-btn}"></button>
+                        </div>
+
+                        <div class="tab-pane sdg" role="tabpanel">
+                            <h4 class="card-title" th:text="#{deep-dives-fragment.sdg-title}"></h4>
+                            <p class="card-text" th:text="#{deep-dives-fragment.sdg-desc-1}"></p>
+                            <p class="card-text" th:text="#{deep-dives-fragment.sdg-desc-2}"></p>
+                            <button class="btn btn-primary deep-dives-btn" th:text="#{deep-dives-fragment.access-data-btn}"></button>
+                        </div>
+
+                        <div class="tab-pane dpra" role="tabpanel">
+                            <h4 class="card-title" th:text="#{deep-dives-fragment.dpra-title}"></h4>
+                            <p class="card-text" th:text="#{deep-dives-fragment.dpra-desc-1}"></p>
+                            <p class="card-text" th:text="#{deep-dives-fragment.dpra-desc-2}"></p>
+                            <p class="card-text" th:text="#{deep-dives-fragment.dpra-desc-3}"></p>
+                            <button class="btn btn-primary deep-dives-btn" th:text="#{deep-dives-fragment.access-data-btn}"></button>
+                        </div>
+
+                        <div class="tab-pane data_prot" role="tabpanel">
+                            <h4 class="card-title" th:text="#{deep-dives-fragment.data-prot-title}"></h4>
+                            <p class="card-text" th:text="#{deep-dives-fragment.data-prot-desc-1}"></p>
+                            <p class="card-text" th:text="#{deep-dives-fragment.data-prot-desc-2}"></p>
+                            <button class="btn btn-primary deep-dives-btn" th:text="#{deep-dives-fragment.access-data-btn}"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+	<body>
+		<div th:fragment="content" id="visible-content" class="container">
+			<div class="row">
+				<div class="col-8 mx-auto justify-content-center">
+					<form action="/login" method="post">
+						<table class="mx-auto mt-3">
+							<tr>
+								<td><label class="m-2" for="username" th:text="#{login-page.username}"></label></td>
+								<td><input class="m-2" type="text" name="username" id="username"/></td>
+							</tr>
+							<tr>
+								<td><label class="m-2" for="password" th:text="#{login-page.password}"></label></td>
+								<td><input class="m-2" type="password" name="password" id="password"/></td>
+							</tr>
+							<tr th:if="${loginError != null}">
+								<td colspan="2" class="error text-center m-2" th:text="${loginError}"></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="d-flex justify-content-end"><input type="submit" class="btn btn-info m-2" th:value="#{login-page.login-button}" id="do_login"/></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

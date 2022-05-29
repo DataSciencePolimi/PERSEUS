@@ -1,0 +1,786 @@
+[
+    {
+        "date": "2021-8-1",
+        "negative": 3766,
+        "neutral": 2657,
+        "positive": 616,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-2",
+        "negative": 4619,
+        "neutral": 0,
+        "positive": 864,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-3",
+        "negative": 5414,
+        "neutral": 3704,
+        "positive": 1094,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-4",
+        "negative": 0,
+        "neutral": 3858,
+        "positive": 1206,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-5",
+        "negative": 6398,
+        "neutral": 3720,
+        "positive": 1336,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-6",
+        "negative": 6134,
+        "neutral": 0,
+        "positive": 1254,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-7",
+        "negative": 0,
+        "neutral": 3479,
+        "positive": 830,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-8",
+        "negative": 6839,
+        "neutral": 3736,
+        "positive": 980,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-9",
+        "negative": 19219,
+        "neutral": 0,
+        "positive": 3358,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-10",
+        "negative": 0,
+        "neutral": 11666,
+        "positive": 2930,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-11",
+        "negative": 12172,
+        "neutral": 7837,
+        "positive": 2176,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-12",
+        "negative": 7585,
+        "neutral": 0,
+        "positive": 2050,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-13",
+        "negative": 0,
+        "neutral": 5356,
+        "positive": 1619,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-14",
+        "negative": 6060,
+        "neutral": 3803,
+        "positive": 929,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-15",
+        "negative": 5965,
+        "neutral": 3751,
+        "positive": 962,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-16",
+        "negative": 5406,
+        "neutral": 0,
+        "positive": 1234,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-17",
+        "negative": 0,
+        "neutral": 3863,
+        "positive": 1333,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-18",
+        "negative": 4930,
+        "neutral": 3694,
+        "positive": 1240,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-19",
+        "negative": 5288,
+        "neutral": 0,
+        "positive": 1436,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-20",
+        "negative": 0,
+        "neutral": 3912,
+        "positive": 1249,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-21",
+        "negative": 5639,
+        "neutral": 3238,
+        "positive": 823,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-22",
+        "negative": 5660,
+        "neutral": 0,
+        "positive": 807,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-23",
+        "negative": 0,
+        "neutral": 3810,
+        "positive": 1221,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-24",
+        "negative": 5822,
+        "neutral": 3827,
+        "positive": 1334,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-25",
+        "negative": 5082,
+        "neutral": 0,
+        "positive": 1464,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-26",
+        "negative": 0,
+        "neutral": 3692,
+        "positive": 1361,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-27",
+        "negative": 5383,
+        "neutral": 4176,
+        "positive": 1419,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-28",
+        "negative": 5201,
+        "neutral": 3915,
+        "positive": 1225,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-29",
+        "negative": 6815,
+        "neutral": 4566,
+        "positive": 1147,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-30",
+        "negative": 9986,
+        "neutral": 0,
+        "positive": 1667,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-8-31",
+        "negative": 0,
+        "neutral": 6882,
+        "positive": 1716,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-9-1",
+        "negative": 7670,
+        "neutral": 5708,
+        "positive": 1801,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-9-2",
+        "negative": 11284,
+        "neutral": 0,
+        "positive": 2563,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-9-3",
+        "negative": 0,
+        "neutral": 6207,
+        "positive": 1714,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-9-4",
+        "negative": 6355,
+        "neutral": 3634,
+        "positive": 913,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-9-5",
+        "negative": 5724,
+        "neutral": 0,
+        "positive": 893,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-9-6",
+        "negative": 0,
+        "neutral": 4177,
+        "positive": 1246,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-9-7",
+        "negative": 7111,
+        "neutral": 5346,
+        "positive": 1735,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-9-8",
+        "negative": 6220,
+        "neutral": 0,
+        "positive": 2311,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-9-9",
+        "negative": 0,
+        "neutral": 5060,
+        "positive": 2261,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-9-10",
+        "negative": 5704,
+        "neutral": 4701,
+        "positive": 2101,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-9-11",
+        "negative": 5195,
+        "neutral": 0,
+        "positive": 934,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-9-12",
+        "negative": 0,
+        "neutral": 4022,
+        "positive": 953,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-9-13",
+        "negative": 7931,
+        "neutral": 6102,
+        "positive": 1802,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-9-14",
+        "negative": 5302,
+        "neutral": 0,
+        "positive": 2138,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-9-15",
+        "negative": 0,
+        "neutral": 4318,
+        "positive": 1384,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-9-28",
+        "negative": 7354,
+        "neutral": 6839,
+        "positive": 1991,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-9-29",
+        "negative": 7923,
+        "neutral": 0,
+        "positive": 2449,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-9-30",
+        "negative": 892,
+        "neutral": 6386,
+        "positive": 2221,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-3",
+        "negative": 5659,
+        "neutral": 542,
+        "positive": 151,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-4",
+        "negative": 5530,
+        "neutral": 3880,
+        "positive": 1474,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-5",
+        "negative": 4933,
+        "neutral": 4556,
+        "positive": 2077,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-6",
+        "negative": 5895,
+        "neutral": 4102,
+        "positive": 1960,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-7",
+        "negative": 6453,
+        "neutral": 5084,
+        "positive": 1714,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-8",
+        "negative": 4590,
+        "neutral": 5119,
+        "positive": 1639,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-9",
+        "negative": 4544,
+        "neutral": 3097,
+        "positive": 963,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-10",
+        "negative": 5552,
+        "neutral": 2855,
+        "positive": 912,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-11",
+        "negative": 6197,
+        "neutral": 5607,
+        "positive": 1514,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-12",
+        "negative": 7292,
+        "neutral": 6515,
+        "positive": 1761,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-13",
+        "negative": 6738,
+        "neutral": 6841,
+        "positive": 1984,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-14",
+        "negative": 0,
+        "neutral": 6626,
+        "positive": 1867,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-15",
+        "negative": 8931,
+        "neutral": 7407,
+        "positive": 2231,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-16",
+        "negative": 9536,
+        "neutral": 5940,
+        "positive": 1572,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-17",
+        "negative": 7584,
+        "neutral": 5436,
+        "positive": 1220,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-18",
+        "negative": 8086,
+        "neutral": 7226,
+        "positive": 1909,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-19",
+        "negative": 8078,
+        "neutral": 8295,
+        "positive": 2119,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-20",
+        "negative": 8424,
+        "neutral": 8623,
+        "positive": 2088,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-21",
+        "negative": 8445,
+        "neutral": 0,
+        "positive": 2105,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-22",
+        "negative": 0,
+        "neutral": 7249,
+        "positive": 2232,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-23",
+        "negative": 6095,
+        "neutral": 4882,
+        "positive": 1513,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-24",
+        "negative": 10411,
+        "neutral": 0,
+        "positive": 1471,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-25",
+        "negative": 0,
+        "neutral": 9049,
+        "positive": 2339,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-26",
+        "negative": 11780,
+        "neutral": 10552,
+        "positive": 2750,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-27",
+        "negative": 10170,
+        "neutral": 0,
+        "positive": 3215,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-28",
+        "negative": 0,
+        "neutral": 8949,
+        "positive": 2552,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-29",
+        "negative": 10325,
+        "neutral": 10201,
+        "positive": 3219,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-30",
+        "negative": 15158,
+        "neutral": 0,
+        "positive": 1256,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-10-31",
+        "negative": 0,
+        "neutral": 12435,
+        "positive": 3013,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-1",
+        "negative": 28793,
+        "neutral": 23450,
+        "positive": 6157,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-2",
+        "negative": 17500,
+        "neutral": 0,
+        "positive": 6138,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-3",
+        "negative": 0,
+        "neutral": 16065,
+        "positive": 5271,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-4",
+        "negative": 14452,
+        "neutral": 13322,
+        "positive": 4496,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-5",
+        "negative": 11376,
+        "neutral": 0,
+        "positive": 4614,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-6",
+        "negative": 0,
+        "neutral": 10527,
+        "positive": 3297,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-7",
+        "negative": 10800,
+        "neutral": 8254,
+        "positive": 2219,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-8",
+        "negative": 14874,
+        "neutral": 0,
+        "positive": 3795,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-9",
+        "negative": 0,
+        "neutral": 12556,
+        "positive": 3982,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-10",
+        "negative": 15833,
+        "neutral": 13958,
+        "positive": 4356,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-11",
+        "negative": 10984,
+        "neutral": 0,
+        "positive": 3624,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-12",
+        "negative": 0,
+        "neutral": 10427,
+        "positive": 3647,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-13",
+        "negative": 10379,
+        "neutral": 7448,
+        "positive": 2247,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-14",
+        "negative": 11650,
+        "neutral": 0,
+        "positive": 1817,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-15",
+        "negative": 0,
+        "neutral": 8826,
+        "positive": 2634,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-16",
+        "negative": 11165,
+        "neutral": 8640,
+        "positive": 2515,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-17",
+        "negative": 9460,
+        "neutral": 0,
+        "positive": 2518,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-18",
+        "negative": 0,
+        "neutral": 7353,
+        "positive": 2403,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-19",
+        "negative": 8154,
+        "neutral": 7432,
+        "positive": 2918,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-20",
+        "negative": 6076,
+        "neutral": 0,
+        "positive": 1377,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-21",
+        "negative": 0,
+        "neutral": 4439,
+        "positive": 1193,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-22",
+        "negative": 6687,
+        "neutral": 6618,
+        "positive": 1842,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-23",
+        "negative": 8142,
+        "neutral": 0,
+        "positive": 1980,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-24",
+        "negative": 0,
+        "neutral": 6391,
+        "positive": 2053,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-25",
+        "negative": 6949,
+        "neutral": 5752,
+        "positive": 2020,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-26",
+        "negative": 5120,
+        "neutral": 0,
+        "positive": 1572,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-27",
+        "negative": 0,
+        "neutral": 4114,
+        "positive": 1170,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-28",
+        "negative": 5517,
+        "neutral": 3986,
+        "positive": 1053,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-29",
+        "negative": 5204,
+        "neutral": 0,
+        "positive": 1655,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-11-30",
+        "negative": 5322,
+        "neutral": 5242,
+        "positive": 1831,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-12-1",
+        "negative": 0,
+        "neutral": 5323,
+        "positive": 1777,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-12-2",
+        "negative": 5741,
+        "neutral": 5487,
+        "positive": 1681,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-12-3",
+        "negative": 5130,
+        "neutral": 3742,
+        "positive": 1687,
+        "keyword": "climate change"
+    },
+    {
+        "date": "2021-12-4",
+        "negative": 4307,
+        "neutral": 0,
+        "positive": 1180,
+        "keyword": "climate change"
+    }
+]

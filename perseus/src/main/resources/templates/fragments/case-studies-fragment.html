@@ -1,0 +1,20 @@
+<html>
+	<body>
+		<div th:fragment="content" id="visible-content">
+<!-- 			<div class="row justify-content-center px-2" th:text="#{case-studies-fragment.case-studies-selection}"></div> -->
+			<h1 th:text="#{case-studies-fragment.case-studies-selection}"></h1>
+			<div class="row mx-2">
+			
+				<div th:each="narrative : ${narratives}" class="card mx-auto my-3 case-study-container">
+				  <img class="card-img-top" th:src="${'caseStudiesPictures/' + narrative[0] + '.png'}" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title" th:text="${narrative[1]}"></h5>
+<!-- 				    <p class="card-text">Scenario related to COVID-19</p> -->
+				    <a href="#" class="btn btn-primary explore-btn" th:data-narrative="${narrative[0]}" th:text="#{case-studies-fragment.explore}"></a>
+				  </div>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>

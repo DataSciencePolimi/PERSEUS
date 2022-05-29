@@ -1,0 +1,87 @@
+<html>
+	<body>
+		<div th:fragment="content" id="visible-content">
+			<div class="container">
+				<div class="row mb-4">
+					<h1>Researcher</h1>
+				</div>
+				
+				<hr></hr>
+				
+				<div class="row">
+					<div class="col-12 order-1 col-sm-4 mb-3 d-flex justify-content-center align-items-center pic-overflow">
+						<img class="img-fluid pic-cover" src="/appimg/logo-aggregator.png"></img>
+					</div>
+					<div class="col-12 order-2 col-sm-8 mb-3 d-flex justify-content-center align-items-center">
+						<button type="button" id="aggregator-btn" class="col-12 btn btn-primary fill-btn">AGGREGATOR</button>
+					</div>
+				</div>
+				
+				<hr></hr>
+				
+				<div class="row">
+					<div class="col-12">
+						<h5 class="mb-0" th:utext="#{default-index-fragment.description-aggregator}"></h5>
+					</div>
+				</div>
+				
+				<hr></hr>
+				
+				<div class="row">
+					<div class="col-12 order-2 col-sm-7 order-sm-1 mb-3 d-flex justify-content-center align-items-center">
+						<button type="button" id="foresight-btn" class="col-12 btn btn-primary fill-btn">Foresight</button>
+					</div>
+					<div class="col-12 order-1 col-sm-5 order-sm-2 mb-3 d-flex justify-content-center align-items-center pic-overflow">
+						<a href="https://trigger-project.eu/" target="_blank">
+							<img class="img-fluid pic-cover" src="/appimg/logo-trigger.png"></img>
+						</a>
+					</div>
+				</div>
+				
+				<hr></hr>
+				
+				<div class="row">
+					<div class="col-12">
+						<h5 class="mb-0" th:text="#{default-index-fragment.description-foresight}"></h5>
+					</div>
+				</div>
+				
+				<hr></hr>
+				
+				<div class="row">
+					<div class="col-12 order-1 col-sm-4 col-xl-3 mb-3 d-flex justify-content-center align-items-center pic-overflow">
+						<img class="img-fluid pic-cover" src="/appimg/logo-cocteau.png"></img>
+					</div>
+					
+					<div class="col-12 order-2 col-sm-8 col-xl-4 mb-3 d-flex justify-content-center align-items-center">
+						<a class="col-12" href="https://trigger-game.eu" target="_blank">
+							<button type="button" class="col-12 btn btn-primary fill-btn">COCTEAU</button>
+						</a>
+					</div>
+					
+					<div class="col-12 order-3 offset-sm-2 col-sm-8 offset-sm-2 offset-xl-0 col-xl-5 mb-3 d-flex justify-content-center align-items-center">
+						<button type="button" id="search-engine-btn" class="col-12 btn btn-primary fill-btn">Search Engine</button>
+					</div>
+				</div>
+				
+				<hr></hr>
+				
+				<div class="row">
+					<div class="col-12">
+						<h5 class="mb-0" th:text="#{default-index-fragment.description-cocteau}"></h5>
+					</div>
+				</div>
+				
+				<hr></hr>
+				
+				<div class="row">
+					<div class="col-12">
+						<h5 class="mb-0" th:text="#{default-index-fragment.description-search-engine}"></h5>
+					</div>
+				</div>
+				
+				<hr></hr>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+[
+    {
+        "entity_mentions": 24,
+        "lang": "hu"
+    },
+    {
+        "entity_mentions": 105,
+        "lang": "sv"
+    },
+    {
+        "entity_mentions": 1676,
+        "lang": "de"
+    },
+    {
+        "entity_mentions": 357,
+        "lang": "pl"
+    },
+    {
+        "entity_mentions": 826,
+        "lang": "fr"
+    },
+    {
+        "entity_mentions": 40369,
+        "lang": "en"
+    },
+    {
+        "entity_mentions": 385,
+        "lang": "pt"
+    }
+]

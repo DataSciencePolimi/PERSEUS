@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>PERSEUS</title>
+    
+    <link rel="icon" 
+      type="image/png" 
+      href="appimg/Logo-PERSEUS.png">
+	
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/index-page.css">
+
+    <!-- Font Awesome JS -->
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+	 -->
+	 
+	<!-- Google Charts API -->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <nav th:replace="fragments/index-fragment.html :: navbar-fragment"></nav>
+        
+        <!-- Page Content Holder -->
+        <div id="content">
+            <nav th:replace="fragments/index-fragment.html :: navbar-switch-fragment"></nav>
+            
+           	<div th:fragment="content" id="visible-content" class="container">
+				<h2 class="row justify-content-center text-center px-2 mb-3" th:text="#{cop26-fragment.title}"></h2>
+				<h5 class="h5-small" th:utext="#{cop26-fragment.intro}"></h5>
+				
+				<!-- Insert Content Here -->
+				<h3 class="text-center background mt-3"><span th:text="#{cop26-fragment.datavolumes}"></span></h3>
+				<h4 class="h5-small" th:text="#{cop26-fragment.datavolumes-rq}"></h4>
+				<h5 class="h5-small" th:text="#{cop26-fragment.datavolumes-description}"></h5>
+				<div id="data_volumes" class="my-3">
+			    </div>
+				
+				<h3 class="text-center background mt-3"><span th:text="#{cop26-fragment.eumentions}"></span></h3>
+				<h4 class="h5-small" th:text="#{cop26-fragment.eumentions-rq}"></h4>
+				<h5 class="h5-small" th:text="#{cop26-fragment.eumentions-description}"></h5>
+				<span class="h5-small" th:utext="#{cop26-fragment.eumentions-languages}"></span>
+				<div id="eu_mentions" class="my-3">
+			    </div>
+			    
+			    <h3 class="text-center background mt-3"><span th:text="#{cop26-fragment.eumentions-overtime}"></span></h3>
+				<h5 class="h5-small" th:text="#{cop26-fragment.eumentions-overtime-description}"></h5>
+				<div id="eu_mentions_over_time" class="my-3">
+			    </div>
+			    
+			    <h3 class="text-center background mt-3"><span th:text="#{cop26-fragment.climatechange}"></span></h3>
+			    <h4 class="h5-small" th:text="#{cop26-fragment.climatechange-rq}"></h4>
+			    <h5 class="h5-small" th:text="#{cop26-fragment.climatechange-description}"></h5>
+				<div id="climate_change_sentiment" class="my-3">
+					
+			    </div>
+			    
+			    <h3 class="text-center background mt-3"><span th:text="#{cop26-fragment.climatechange-overtime}"></span></h3>
+			    <h5 class="h5-small" th:text="#{cop26-fragment.climatechange-description-overtime}"></h5>
+				<div id="climate_change_sentiment_over_time" class="my-3">
+					
+			    </div>
+			    
+			    <h3 class="text-center background mt-3"><span th:text="#{cop26-fragment.climatepolicy}"></span></h3>
+			    <h4 class="h5-small" th:text="#{cop26-fragment.climatepolicy-rq}"></h4>
+			    <h5 class="h5-small" th:text="#{cop26-fragment.climatepolicy-description}"></h5>
+				<div id="climate_policy_sentiment" class="my-3">
+			    </div>
+			    
+			    <h3 class="text-center background mt-3"><span th:text="#{cop26-fragment.climatepolicy-overtime}"></span></h3>
+			    <h5 class="h5-small" th:text="#{cop26-fragment.climatepolicy-description-overtime}"></h5>
+				<div id="climate_policy_sentiment_over_time" class="my-3">
+			    </div>
+			    
+			    <h3 class="text-center background mt-3"><span th:text="#{cop26-fragment.topicdata}"></span></h3>
+			    <h4 class="h5-small" th:text="#{cop26-fragment.topicdata-rq}"></h4>
+			    <h5 class="h5-small" th:text="#{cop26-fragment.topicdata-description}"></h5>
+			    <div class="d-flex justify-content-center my-3">
+				    <select name="topic" id="topic-select" class="mx-4">
+						<option value="1"  th:text="#{cop26-fragment.ccag}"></option>
+						<option value="2" th:text="#{cop26-fragment.cpi}"></option>
+						<option value="3" th:text="#{cop26-fragment.mp}"></option>
+						<option value="4" th:text="#{cop26-fragment.sec}"></option>
+						<option value="5" th:text="#{cop26-fragment.amb}"></option>
+						<option value="6" th:text="#{cop26-fragment.cd}"></option>
+					</select>
+					<select name="topic-type" id="topic-type" class="mx-4">
+						<option value="1"  th:text="#{cop26-fragment.complete}"></option>
+						<option value="2" th:text="#{cop26-fragment.individual}"></option>
+					</select>
+				</div>
+				<span id="k-1" class="h5-small" th:utext="#{cop26-fragment.topicdata-1}"></span>
+				<span id="k-2" class="h5-small hidden" th:utext="#{cop26-fragment.topicdata-2}"></span>
+				<span id="k-3" class="h5-small hidden" th:utext="#{cop26-fragment.topicdata-3}"></span>
+				<span id="k-4" class="h5-small hidden" th:utext="#{cop26-fragment.topicdata-4}"></span>
+				<span id="k-5" class="h5-small hidden" th:utext="#{cop26-fragment.topicdata-5}"></span>
+				<span id="k-6" class="h5-small hidden" th:utext="#{cop26-fragment.topicdata-6}"></span>
+				<div id="topic_data" class="my-3">
+			    </div>
+			    
+			    <h3 class="text-center background mt-3"><span th:text="#{cop26-fragment.topicdata-summary}"></span></h3>
+			    <h5 class="h5-small" th:text="#{cop26-fragment.topicdata-description-summary}"></h5>
+				<div id="topic_data_summary" class="my-3">
+		    	</div>
+			</div>
+    	</div>
+   	</div>
+    
+    <script type="text/javascript" src="/webjars/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    
+	<!-- Google Charts Scripts -->
+    <script type="text/javascript" src="js/cop26-analysis-charts-js.js"></script>
+	
+    <script type="text/javascript" src="js/index-js.js"></script>
+    <script type="text/javascript" src="js/d3/d3.v3.min.js"></script>
+	<script type="text/javascript" src="js/d3/d3-dispatch.min.js"></script>
+    <script type="text/javascript" src="js/d3/d3.layout.cloud.js"></script>
+    
+   	<script type="text/javascript">
+    	var authenticated = true;
+   	
+   		// Load the Visualization API and the controls package.
+    	function loadGoogle() {
+    		google.charts.load('current', {
+    	        'packages':['line', 'corechart', 'bar'],
+    	    });
+    		
+    		google.charts.setOnLoadCallback(
+    			function() {
+    				if(authenticated) {
+    		    		drawDashboard();
+    		    	}
+    			}
+    		);
+    	};
+    	
+        loadGoogle();
+   	</script>
+
+</body>
+
+</html>

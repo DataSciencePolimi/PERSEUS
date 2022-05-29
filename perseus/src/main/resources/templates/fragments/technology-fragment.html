@@ -1,0 +1,70 @@
+<html>
+<body>
+    <div th:fragment="content" id="visible-content">
+        <h1 th:text="#{technology-fragment.title}"></h1>
+        <!-- EU related datasets -->
+        <div class="row mx-2 mt-4">
+            <div class="card col-12 px-0">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs navigation" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" href=".paper-1" role="tab" aria-controls="paper-1" aria-selected="true" data-toggle="tab" th:text="#{technology-fragment.paper-1-tab}"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=".paper-2" role="tab" aria-controls="paper-1" aria-selected="true" data-toggle="tab" th:text="#{technology-fragment.paper-2-tab}"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=".paper-3" role="tab" aria-controls="paper-1" aria-selected="true" data-toggle="tab" th:text="#{technology-fragment.paper-3-tab}"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=".paper-4" role="tab" aria-controls="paper-1" aria-selected="true" data-toggle="tab" th:text="#{technology-fragment.paper-4-tab}"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=".paper-5" role="tab" aria-controls="paper-1" aria-selected="true" data-toggle="tab" th:text="#{technology-fragment.paper-5-tab}"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-body">
+                    <div class="tab-content mt-3">
+                        <div class="tab-pane active paper-1" role="tabpanel">
+                            <h4 class="card-title" th:text="#{technology-fragment.paper-1-title}"></h4>
+                            <p class="card-text" th:text="#{technology-fragment.paper-1-desc-1}"></p>
+                            <p class="card-text" th:text="#{technology-fragment.paper-1-desc-2}"></p>
+                            <button class="btn btn-primary tech-doc-btn" th:text="#{technology-fragment.access-data-btn}"></button>
+                        </div>
+                        <div class="tab-pane paper-2" role="tabpanel">
+                            <h4 class="card-title" th:text="#{technology-fragment.paper-2-title}"></h4>
+                            <p class="card-text" th:text="#{technology-fragment.paper-2-desc-1}"></p>
+                            <p class="card-text" th:text="#{technology-fragment.paper-2-desc-2}"></p>
+                            <p class="card-text" th:text="#{technology-fragment.paper-2-desc-3}"></p>
+                            <p class="card-text" th:text="#{technology-fragment.paper-2-desc-4}"></p>
+                            <button class="btn btn-primary tech-doc-btn" th:text="#{technology-fragment.access-data-btn}"></button>
+                        </div>
+                        <div class="tab-pane paper-3" role="tabpanel">
+                            <h4 class="card-title" th:text="#{technology-fragment.paper-3-title}"></h4>
+                            <p class="card-text" th:text="#{technology-fragment.paper-3-desc-1}"></p>
+                            <p class="card-text" th:text="#{technology-fragment.paper-3-desc-2}"></p>
+                            <p class="card-text" th:text="#{technology-fragment.paper-3-desc-3}"></p>
+                            <p class="card-text" th:text="#{technology-fragment.paper-3-desc-4}"></p>
+                            <button class="btn btn-primary tech-doc-btn" th:text="#{technology-fragment.access-data-btn}"></button>
+                        </div>
+                        <div class="tab-pane paper-4" role="tabpanel">
+                            <h4 class="card-title" th:text="#{technology-fragment.paper-4-title}"></h4>
+                            <p class="card-text" th:text="#{technology-fragment.paper-4-desc-1}"></p>
+                            <button class="btn btn-primary tech-doc-btn" th:text="#{technology-fragment.access-data-btn}"></button>
+                        </div>
+                        <div class="tab-pane paper-5" role="tabpanel">
+                            <h4 class="card-title" th:text="#{technology-fragment.paper-5-title}"></h4>
+                            <p class="card-text" th:text="#{technology-fragment.paper-5-desc-1}"></p>
+                            <p class="card-text" th:text="#{technology-fragment.paper-5-desc-2}"></p>
+                            <p class="card-text" th:text="#{technology-fragment.paper-5-desc-3}"></p>
+                            <button class="btn btn-primary tech-doc-btn" th:text="#{technology-fragment.access-data-btn}"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<html>
+	<body>
+		<div th:fragment="content" id="visible-content" class="container">
+			<h1 th:text="#{document-upload.title}"></h1>
+			
+			<form action="#" method="post" class="mt-4" id="document_upload_form" enctype="multipart/form-data">
+				<div class="form-group row col-12 col-sm-12 col-md-10 col-lg-7 mx-auto mt-2 justify-content-between align-items-center">
+			    	<label for="documentTitle" class="col-12 col-sm-2 col-md-2 col-lg-2 col-form-label font-weight-bold" th:text="#{document-upload.form-title}"></label>
+			    	<div class="col-12 col-sm-9 col-md-9 col-lg-9">
+			    		<input type="text" class="form-control" id="documentTitle" name="documentTitle" th:placeholder="#{document-upload.form-title-placeholder}" required>
+			    	</div>
+			  	</div>
+			  	
+			  	<div class="form-group row col-12 col-sm-12 col-md-10 col-lg-7 mx-auto mt-2 justify-content-between align-items-center">
+			    	<label for="documentInstitution" class="col-12 col-sm-2 col-md-2 col-lg-2 col-form-label font-weight-bold" th:text="#{document-upload.form-institution}"></label>
+			    	<div class="col-12 col-sm-9 col-md-9 col-lg-9">
+			    		<input type="text" class="form-control" id="documentInstitution" name="documentInstitution" th:placeholder="#{document-upload.form-institution-placeholder}" required>
+			    	</div>
+			  	</div>
+			  	
+			  	<div class="form-group row col-12 col-sm-12 col-md-10 col-lg-7 mx-auto mt-2 justify-content-between align-items-center">
+			    	<label for="documentAuthors" class="col-12 col-sm-2 col-md-2 col-lg-2 col-form-label font-weight-bold" th:text="#{document-upload.form-authors}"> </label>
+			    	<div class="col-12 col-sm-9 col-md-9 col-lg-9">
+			    		<input type="text" class="form-control" id="documentAuthors" name="documentAuthors" th:placeholder="#{document-upload.form-authors-placeholder}" required>
+			    	</div>
+			  	</div>
+			  	
+			  	<div class="form-group row col-12 col-sm-12 col-md-10 col-lg-7 mx-auto mt-2 justify-content-between align-items-center">
+			    	<label for="publicationDate" class="col-12 col-sm-2 col-md-2 col-lg-2 col-form-label font-weight-bold" th:text="#{document-upload.form-publicationdate}"></label>
+			    	<div class="col-12 col-sm-9 col-md-9 col-lg-9">
+			    		<input class="form-control" type="date" id="publicationDate" name="publicationDate" required>
+			    	</div>
+			  	</div>
+			  	
+			  	<div class="form-group row col-12 col-sm-12 col-md-10 col-lg-7 mx-auto mt-2 justify-content-between align-items-center">
+			    	<label for="documentKeywords" class="col-12 col-sm-2 col-md-2 col-lg-2 col-form-label font-weight-bold" th:text="#{document-upload.form-keywords}"></label>
+			    	<div class="col-12 col-sm-9 col-md-9 col-lg-9">
+			    		<input type="text" class="form-control" id="documentKeywords" name="documentKeywords" th:placeholder="#{document-upload.form-keywords-placeholder}" required>
+			    	</div>
+			  	</div>
+			  	
+			  	<div class="form-group row col-12 col-sm-12 col-md-10 col-lg-7 mx-auto mt-2 justify-content-between align-items-center">
+				  	<label for="documentCategory" class="col-12 col-sm-2 col-md-2 col-lg-2 col-form-label font-weight-bold" th:text="#{document-upload.form-component}"></label>
+				  	<div class="col-12 col-sm-9 col-md-9 col-lg-9">
+					  	<div th:each="cat : ${categories}" class="form-check">
+						  	<input class="form-check-input" type="checkbox" name="category" th:id="${#strings.toLowerCase(cat)}" th:value="${#strings.toLowerCase(cat)}">
+						  	<label class="form-check-label" th:for="${#strings.toLowerCase(cat)}" th:text="${cat}"></label>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group row col-12 col-sm-12 col-md-10 col-lg-7 mx-auto mt-2 justify-content-between align-items-center">
+					<label for="policySector" class="col-12 col-sm-2 col-md-2 col-lg-2 col-form-label font-weight-bold" th:text="#{document-upload.form-sectors}"></label>
+					<div class="col-12 col-sm-9 col-md-9 col-lg-9">
+						<div th:each="sector : ${sectors}" class="form-check">
+							<input class="form-check-input" type="checkbox" name="sector" th:id="${#strings.toLowerCase(sector)}" th:value="${#strings.toLowerCase(sector)}">
+							<label class="form-check-label" th:for="${#strings.toLowerCase(sector)}" th:text="${sector}"></label>
+						</div>
+					</div>
+				</div>
+
+			  	<div class="form-group row col-12 col-sm-12 col-md-10 col-lg-7 mx-auto mt-2 justify-content-between align-items-center">
+			    	<label for="documentLicense" class="col-12 col-sm-2 col-md-2 col-lg-2 col-form-label font-weight-bold" th:text="#{document-search.form-resource}"></label>
+			    	<div class="col-12 col-sm-9 col-md-9 col-lg-9">
+				      	<select id="documentResource" name="documentResource" class="form-control">
+					        <option th:each="doc, index : ${documents}" th:value="${#strings.toLowerCase(doc)}" th:text="${doc}"></option>
+					        <option th:each="web : ${webpages}" th:value="${#strings.toLowerCase(web)}" th:text="${web}"></option>
+				      	</select>
+			    	</div>
+			  	</div>
+			  	
+			  	<div class="form-group row col-12 col-sm-12 col-md-10 col-lg-7 mx-auto mt-2 justify-content-between align-items-center">
+			    	<label class="col-12 col-sm-2 col-md-2 col-lg-2 col-form-label font-weight-bold" th:text="#{document-search.form-license}"></label>
+			    	<div class="col-12 col-sm-9 col-md-9 col-lg-9 my-auto">
+			    		<div th:each="lic, index : ${licenses}" th:if="${index.index > 0}" class="form-check form-check-inline">
+						  	<input th:if="${index.index == 1}" class="form-check-input" type="radio" name="documentLicense" th:id="${#strings.toLowerCase(lic)}" th:value="${#strings.toLowerCase(lic)}" checked>
+						  	<input th:if="${index.index > 1}" class="form-check-input" type="radio" name="documentLicense" th:id="${#strings.toLowerCase(lic)}" th:value="${#strings.toLowerCase(lic)}">
+						  	<label th:if="${index.index > 0}" class="form-check-label" th:for="${#strings.toLowerCase(lic)}" th:text="${lic}"></label>
+						</div>
+			    	</div>
+			  	</div>
+			  	
+			  	<div id="documentFormFragment">
+			  		<div class="form-group row col-12 col-sm-12 col-md-10 col-lg-7 mx-auto mt-2 justify-content-between align-items-center">
+				    	<label for="downloadLink" class="col-12 col-sm-2 col-md-2 col-lg-2 col-form-label font-weight-bold" th:text="#{document-upload.form-downloadlink}"></label>
+				    	<div class="col-12 col-sm-9 col-md-9 col-lg-9">
+				    		<input type="url" class="form-control" id="downloadLink" name="downloadLink" th:placeholder="#{document-upload.form-downloadlink-placeholder}">
+				    	</div>
+				  	</div>
+				  	
+				  	<div class="form-group row col-12 col-sm-12 col-md-10 col-lg-7 mx-auto mt-2 justify-content-between align-items-center">
+				    	<label for="documentFile" class="col-12 col-sm-2 col-md-2 col-lg-2 col-form-label font-weight-bold" th:text="#{document-upload.form-documentfile}"></label>
+				    	<div class="col-12 col-sm-9 col-md-9 col-lg-9">
+				    		<input type="file" accept=".doc,.docx,.pdf,.xls,.xlsx,.xlsm,.xlsb,.ppt,.pptx" class="form-control-file" name="documentFile" id="documentFile">
+				    	</div>
+				  	</div>
+			  	</div>
+			  	
+			  	<div id="websiteFormFragment">
+			  		<div class="form-group row col-12 col-sm-12 col-md-10 col-lg-7 mx-auto mt-2 justify-content-between align-items-center">
+				    	<label for="websiteLink" class="col-12 col-sm-2 col-md-2 col-lg-2 col-form-label font-weight-bold" th:text="#{document-upload.form-websitelink}"></label>
+				    	<div class="col-12 col-sm-9 col-md-9 col-lg-9">
+				    		<input type="url" class="form-control" id="websiteLink" name="websiteLink" th:placeholder="#{document-upload.form-websitelink-placeholder}">
+				    	</div>
+				  	</div>
+			  	</div>
+			  	
+			  	<div class="form-group row col-12 col-sm-12 col-md-10 col-lg-7 mx-auto mt-2 justify-content-between align-items-center">
+			  		<label for="abstract" class="col-12 col-sm-2 col-md-2 col-lg-2 col-form-label font-weight-bold" th:text="#{document-upload.form-abstract-description}"></label>
+			  		<div class="col-12 col-sm-9 col-md-9 col-lg-9">
+			  			<textarea class="w_100" id="abstractTextarea" name="abstract" placeholder="Description or Abstract of the Document..." required></textarea>
+			  		</div>
+			  	</div>
+			  	
+			  	<div class="form-group row col-12 col-sm-12 col-md-10 col-lg-7 mx-auto mt-2 justify-content-between align-items-center">
+			    	<label for="documentExternalReference" class="col-12 col-sm-2 col-md-2 col-lg-2 col-form-label font-weight-bold" th:text="#{document-upload.form-externalreference}"></label>
+			    	<div class="col-12 col-sm-9 col-md-9 col-lg-9">
+			    		<input type="url" class="form-control" id="documentExternalReference" name="documentExternalReference" th:placeholder="#{document-upload.form-externalreference-placeholder}">
+			    	</div>
+			  	</div>
+			  	
+			  	<div class="form-group row col-12 col-sm-12 col-md-10 col-lg-7 mx-auto mt-2 justify-content-between align-items-center">
+				  	<div class="form-check mx-auto">
+						  <input class="form-check-input" type="checkbox" name="confirmUpload" id="confirmUpload" required>
+						  <label class="form-check-label" for="confirmUpload" th:text="#{document-upload.confirm-upload}"></label>
+					</div>
+				</div>
+			  	
+			  	<div class="form-group row col-12 col-sm-12 col-md-10 col-lg-7 mx-auto justify-content-between align-items-center">
+			  		<button class="btn btn-primary" id="back_document_query" th:text="#{document-upload.form-back-button}"></button>
+			  		<input type="submit" th:value="#{document-upload.form-upload-button}" class="btn btn-primary" name="documentUploadButton" id="documentUploadButton" disabled>
+			  	</div>
+			</form>
+		</div>
+	</body>
+</html>

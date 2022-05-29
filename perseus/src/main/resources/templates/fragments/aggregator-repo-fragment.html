@@ -1,0 +1,120 @@
+<html>
+<body>
+    <div th:fragment="content" id="visible-content">
+        <h1 th:text="#{agg-repo-fragment.title}"></h1>
+        <!-- EU related datasets -->
+        <div class="row mx-2 mt-4">
+            <div class="text-center">
+                <h3 th:text="#{agg-repo-fragment.eu-title}"></h3>
+            </div>
+            <div class="card col-12 px-0">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs navigation" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" href=".ceps_eurlex" role="tab" aria-controls="ceps_eurlex" aria-selected="true" data-toggle="tab" th:text="#{agg-repo-fragment.eurlex-tab}"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href=".diff_integration" role="tab" aria-controls="diff_integration" aria-selected="false" data-toggle="tab" th:text="#{agg-repo-fragment.diff-int-tab}"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=".human_resources" role="tab" aria-controls="human_resources" aria-selected="false" data-toggle="tab" th:text="#{agg-repo-fragment.ht-tab}"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=".multilevel_gov" role="tab" aria-controls="multilevel_gov" aria-selected="false" data-toggle="tab" th:text="#{agg-repo-fragment.ml-gov-tab}"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-body">
+                    <div class="tab-content mt-3">
+                        <div class="tab-pane active ceps_eurlex" role="tabpanel">
+                            <h4 class="card-title" th:text="#{agg-repo-fragment.eurlex-title}"></h4>
+                            <p class="card-text" th:text="#{agg-repo-fragment.eurlex-desc-1}"></p>
+                            <p class="card-text" th:text="#{agg-repo-fragment.eurlex-desc-2}"></p>
+                            <a href="https://trigger.eui.eu/ceps-eurlex-dataset-collection/all/countryNotes" target="_blank" class="btn btn-primary" th:text="#{agg-repo-fragment.access-data-btn}"></a>
+                        </div>
+
+                        <div class="tab-pane diff_integration" role="tabpanel" aria-labelledby="ingredients-tab">
+                            <h4 class="card-title" th:text="#{agg-repo-fragment.diff-int-title}"></h4>
+                            <p class="card-text" th:text="#{agg-repo-fragment.diff-int-desc-1}"></p>
+                            <p class="card-text" th:text="#{agg-repo-fragment.diff-int-desc-2}"></p>
+                            <a href="https://trigger.eui.eu/eu-differentiated-integration/all/countryNotes" target="_blank" class="btn btn-primary" th:text="#{agg-repo-fragment.access-data-btn}"></a>
+                        </div>
+
+                        <div class="tab-pane human_resources" role="tabpanel" aria-labelledby="nutrition-tab">
+                            <h4 class="card-title" th:text="#{agg-repo-fragment.hr-title}"></h4>
+                            <p class="card-text" th:text="#{agg-repo-fragment.ht-desc-1}"></p>
+                            <p class="card-text" th:text="#{agg-repo-fragment.ht-desc-2}"></p>
+                            <p class="card-text" th:text="#{agg-repo-fragment.ht-desc-3}"></p>
+                            <a href="https://trigger.eui.eu/eu-hr/all/countryNotes" target="_blank" class="btn btn-primary" th:text="#{agg-repo-fragment.access-data-btn}"></a>
+                        </div>
+
+                        <div class="tab-pane multilevel_gov" role="tabpanel" aria-labelledby="nutrition-tab">
+                            <h4 class="card-title" th:text="#{agg-repo-fragment.ml-gov-title}"></h4>
+                            <p class="card-text" th:text="#{agg-repo-fragment.ml-gov-desc-1}"></p>
+                            <p class="card-text" th:text="#{agg-repo-fragment.ml-gov-desc-2}"></p>
+                            <a href="https://trigger.eui.eu/european-union/all/countryNotes" target="_blank" class="btn btn-primary" th:text="#{agg-repo-fragment.access-data-btn}"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Global governance datasets -->
+        <div class="row mx-2 mt-4">
+            <div class="text-center">
+                <h3 th:text="#{agg-repo-fragment.global-gov-title}"></h3>
+            </div>
+            <div class="card col-12 px-0">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs navigation" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" href=".global_governance" role="tab" aria-controls="global_governance" aria-selected="true" data-toggle="tab" th:text="#{agg-repo-fragment.gg-regimes-tab}"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href=".int_reg_coop" role="tab" aria-controls="int_reg_coop" aria-selected="false" data-toggle="tab" th:text="#{agg-repo-fragment.int-reg-coop-tab}"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=".measure_gov" role="tab" aria-controls="measure_gov" aria-selected="false" data-toggle="tab" th:text="#{agg-repo-fragment.measure-gov-tab}"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=".transnational" role="tab" aria-controls="transnational" aria-selected="false" data-toggle="tab" th:text="#{agg-repo-fragment.transnational-tab}"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-body">
+                    <div class="tab-content mt-3">
+                        <div class="tab-pane active global_governance" role="tabpanel">
+                            <h4 class="card-title" th:text="#{agg-repo-fragment.gg-regimes-title}"></h4>
+                            <p class="card-text" th:text="#{agg-repo-fragment.gg-regimes-desc-1}"></p>
+                            <p class="card-text" th:text="#{agg-repo-fragment.gg-regimes-desc-2}"></p>
+                            <a href="https://trigger.eui.eu/global-governance/all/countryNotes" target="_blank" class="btn btn-primary" th:text="#{agg-repo-fragment.access-data-btn}"></a>
+                        </div>
+
+                        <div class="tab-pane int_reg_coop" role="tabpanel" aria-labelledby="int_reg_coop-tab">
+                            <h4 class="card-title" th:text="#{agg-repo-fragment.int-reg-coop-title}"></h4>
+                            <p class="card-text" th:text="#{agg-repo-fragment.int-reg-coop-desc-1}"></p>
+                            <a href="https://trigger.eui.eu/international-regulatory-cooperation/all/countryNotes" target="_blank" class="btn btn-primary" th:text="#{agg-repo-fragment.access-data-btn}"></a>
+                        </div>
+
+                        <div class="tab-pane measure_gov" role="tabpanel" aria-labelledby="measure_gov-tab">
+                            <h4 class="card-title" th:text="#{agg-repo-fragment.measure-gov-title}"></h4>
+                            <p class="card-text" th:text="#{agg-repo-fragment.measure-gov-desc-1}"></p>
+                            <p class="card-text" th:text="#{agg-repo-fragment.measure-gov-desc-2}"></p>
+                            <a href="https://trigger.eui.eu/measuring/all/countryNotes" target="_blank" class="btn btn-primary" th:text="#{agg-repo-fragment.access-data-btn}"></a>
+                        </div>
+
+                        <div class="tab-pane transnational" role="tabpanel" aria-labelledby="transnational-tab">
+                            <h4 class="card-title" th:text="#{agg-repo-fragment.transnational-title}"></h4>
+                            <p class="card-text" th:text="#{agg-repo-fragment.transnational-desc-1}"></p>
+                            <p class="card-text" th:text="#{agg-repo-fragment.transnational-desc-2}"></p>
+                            <a href="https://trigger.eui.eu/transnational-private-regulation/all/countryNotes" target="_blank" class="btn btn-primary" th:text="#{agg-repo-fragment.access-data-btn}"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

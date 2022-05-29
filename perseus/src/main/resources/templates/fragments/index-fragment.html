@@ -1,0 +1,119 @@
+<html>
+	<body>
+		<nav th:fragment="navbar-switch-fragment" class="navbar navbar-expand-lg navbar-light bg-light" id="topbar">
+            <div class="container-fluid">
+                <button type="button" id="sidebarCollapse" class="navbar-btn active">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+	
+		<!-- Sidebar Holder -->
+        <nav id="sidebar" class="active" th:fragment="navbar-fragment">
+            <div class="sidebar-header">
+            	<a href="#">
+	            	<div class="d-flex justify-content-center mt-2">
+	            		<img src="/appimg/logo.svg" id="perseus_home">
+	            	</div>
+            	</a>
+            </div>
+
+            <ul class="list-unstyled components ul-text">
+                <li>
+                    <a href="http://trigger-game.eu" id="cocteau" target="_blank" th:text="#{sidebar-fragment.COCTEAU}"></a>
+                </li>
+                <li>
+                    <a href="#" id="cop_26" th:text="#{sidebar-fragment.cop-26}"></a>
+                </li>
+                <li>
+                	<a href="#foresightSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" th:text="#{sidebar-fragment.foresight}"></a>
+                	<ul class="collapse list-unstyled submenu" id="foresightSubmenu">
+		                <li>
+		                    <a href="#" id="agg_eurlex" th:text="#{sidebar-fragment.agg-eurlex}"></a>
+		                </li>
+		                <li>
+		                    <a href="#" id="deep_dives" th:text="#{sidebar-fragment.deep-dives}"></a>
+		                </li>
+		                <li>
+		                    <a href="#" id="foresight_technology" th:text="#{sidebar-fragment.technology}"></a>
+		                </li>
+		                <li>
+		                    <a href="#" id="scenarios" th:text="#{sidebar-fragment.scenarios}"></a>
+		                </li>
+                	</ul>
+                </li>
+                <li>
+                    <a href="#" id="agg_repo" th:text="#{sidebar-fragment.AGGREGATOR}"></a>
+                </li>
+                <li>
+                    <a href="#" id="document_search" th:text="#{sidebar-fragment.document-search}"></a>
+                </li>
+                <li>
+                    <a href="https://trigger-project.eu/" id="trigger" target="_blank" th:text="#{sidebar-fragment.trigger-project}"></a>
+                </li>
+            </ul>
+        </nav>
+	
+		<section th:fragment="default-index-fragment" id="visible-content">
+			<div class="container home-container">
+				<div class="row mb-4">
+					<div class="col-12">
+						<h1 th:text="#{default-index-fragment.PERSEUS}"></h1>
+					</div>
+				</div>
+				<div class="row mb-4">
+					<div class="col-12 col-md-6 center">
+ 						<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6kB_S_mUiyc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+					<div class="col-12 col-md-6">
+						<p class="bigger" th:text="#{default-index-fragment.PERSEUS-description}"></div>
+				</div>
+				<div class="line"></div>
+				<div class="text-center mb-4">
+					<span class="h3 align-middle mb-1" th:utext="#{default-index-fragment.ima}"></span>
+					<button type="button" class="btn btn-primary btn-lg mb-1 bigger mx-2" id="policymaker-role-btn"><strong class="btn-text">Policymaker</strong></button>
+					<button type="button" class="btn btn-primary btn-lg mb-1 bigger mx-2" id="researcher-role-btn"><strong class="btn-text">Researcher</strong></button>
+					<button type="button" class="btn btn-primary btn-lg mb-1 bigger mx-2" id="citizen-role-btn"><strong class="btn-text">Citizen</strong></button>
+				</div>
+				<div class="row home-bottom-row">
+					<div class="col-12 col-md-4 col-sm-8 col-xs-8 mx-auto">
+						<div class="row">
+							<div class="col-12 col-xl-4">
+								<img src="/appimg/bandiera-eu.jpg" class="img-fluid mt-2" alt="eu flag">
+							</div>
+							<div class="col-12 col-xl-8 small mt-2">
+								<p th:text="#{default-index-fragment.PERSEUS-funding-1}"></p>
+								<p th:text="#{default-index-fragment.PERSEUS-funding-2}"></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 col-sm-8 col-xs-8 mx-auto">
+						<h2 class="text-center" th:text="#{default-index-fragment.project-by}"></h2>
+						<div class="row justify-content-center">
+							<div class="col-12 col-lg-8 my-2">
+								<img src="/appimg/logo-trigger.png" class="img-fluid" alt="logo trigger">
+							</div>
+							<div class="col-12 col-lg-8 my-2">
+								<img src="/appimg/logo-periscope.jpg" class="img-fluid" alt="logo periscope">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 col-sm-8 col-xs-8 mx-auto">
+						<h2 class="text-center" th:text="#{default-index-fragment.project-by}"></h2>
+						<div class="row justify-content-center">
+							<div class="col-12 col-lg-8 my-2">
+								<img src="/appimg/logo-polimi.png" class="img-fluid" alt="logo polimi">
+							</div>
+							<div class="col-12 col-lg-8 my-2">
+								<img src="/appimg/logo-ceps.jpg" class="img-fluid" alt="logo ceps">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	</body>
+</html>

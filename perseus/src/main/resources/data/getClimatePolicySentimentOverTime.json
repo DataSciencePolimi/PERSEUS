@@ -1,0 +1,786 @@
+[
+    {
+        "date": "2021-8-1",
+        "negative": 24,
+        "neutral": 21,
+        "positive": 8,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-2",
+        "negative": 44,
+        "neutral": 43,
+        "positive": 10,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-3",
+        "negative": 41,
+        "neutral": 43,
+        "positive": 20,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-4",
+        "negative": 23,
+        "neutral": 59,
+        "positive": 21,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-5",
+        "negative": 39,
+        "neutral": 36,
+        "positive": 25,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-6",
+        "negative": 37,
+        "neutral": 57,
+        "positive": 16,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-7",
+        "negative": 43,
+        "neutral": 51,
+        "positive": 9,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-8",
+        "negative": 53,
+        "neutral": 65,
+        "positive": 9,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-9",
+        "negative": 187,
+        "neutral": 347,
+        "positive": 53,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-10",
+        "negative": 174,
+        "neutral": 190,
+        "positive": 43,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-11",
+        "negative": 125,
+        "neutral": 105,
+        "positive": 33,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-12",
+        "negative": 93,
+        "neutral": 108,
+        "positive": 30,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-13",
+        "negative": 81,
+        "neutral": 115,
+        "positive": 36,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-14",
+        "negative": 42,
+        "neutral": 54,
+        "positive": 22,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-15",
+        "negative": 61,
+        "neutral": 51,
+        "positive": 18,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-16",
+        "negative": 84,
+        "neutral": 69,
+        "positive": 32,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-17",
+        "negative": 46,
+        "neutral": 53,
+        "positive": 23,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-18",
+        "negative": 206,
+        "neutral": 65,
+        "positive": 20,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-19",
+        "negative": 48,
+        "neutral": 67,
+        "positive": 20,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-20",
+        "negative": 34,
+        "neutral": 87,
+        "positive": 11,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-21",
+        "negative": 25,
+        "neutral": 47,
+        "positive": 9,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-22",
+        "negative": 28,
+        "neutral": 38,
+        "positive": 10,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-23",
+        "negative": 33,
+        "neutral": 70,
+        "positive": 21,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-24",
+        "negative": 35,
+        "neutral": 36,
+        "positive": 26,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-25",
+        "negative": 37,
+        "neutral": 61,
+        "positive": 23,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-26",
+        "negative": 41,
+        "neutral": 57,
+        "positive": 37,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-27",
+        "negative": 71,
+        "neutral": 62,
+        "positive": 31,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-28",
+        "negative": 65,
+        "neutral": 62,
+        "positive": 23,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-29",
+        "negative": 54,
+        "neutral": 51,
+        "positive": 18,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-30",
+        "negative": 70,
+        "neutral": 79,
+        "positive": 41,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-8-31",
+        "negative": 101,
+        "neutral": 83,
+        "positive": 30,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-9-1",
+        "negative": 88,
+        "neutral": 78,
+        "positive": 25,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-9-2",
+        "negative": 102,
+        "neutral": 94,
+        "positive": 36,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-9-3",
+        "negative": 89,
+        "neutral": 86,
+        "positive": 37,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-9-4",
+        "negative": 49,
+        "neutral": 40,
+        "positive": 15,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-9-5",
+        "negative": 52,
+        "neutral": 39,
+        "positive": 12,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-9-6",
+        "negative": 40,
+        "neutral": 65,
+        "positive": 22,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-9-7",
+        "negative": 77,
+        "neutral": 87,
+        "positive": 26,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-9-8",
+        "negative": 74,
+        "neutral": 129,
+        "positive": 35,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-9-9",
+        "negative": 100,
+        "neutral": 118,
+        "positive": 32,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-9-10",
+        "negative": 34,
+        "neutral": 39,
+        "positive": 31,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-9-11",
+        "negative": 61,
+        "neutral": 56,
+        "positive": 17,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-9-12",
+        "negative": 178,
+        "neutral": 122,
+        "positive": 15,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-9-13",
+        "negative": 107,
+        "neutral": 114,
+        "positive": 37,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-9-14",
+        "negative": 50,
+        "neutral": 73,
+        "positive": 49,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-9-15",
+        "negative": 126,
+        "neutral": 0,
+        "positive": 39,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-9-28",
+        "negative": 154,
+        "neutral": 198,
+        "positive": 40,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-9-29",
+        "negative": 0,
+        "neutral": 174,
+        "positive": 70,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-9-30",
+        "negative": 159,
+        "neutral": 220,
+        "positive": 35,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-3",
+        "negative": 29,
+        "neutral": 71,
+        "positive": 2,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-4",
+        "negative": 70,
+        "neutral": 112,
+        "positive": 35,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-5",
+        "negative": 69,
+        "neutral": 100,
+        "positive": 29,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-6",
+        "negative": 70,
+        "neutral": 198,
+        "positive": 53,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-7",
+        "negative": 82,
+        "neutral": 108,
+        "positive": 36,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-8",
+        "negative": 65,
+        "neutral": 98,
+        "positive": 33,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-9",
+        "negative": 61,
+        "neutral": 58,
+        "positive": 14,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-10",
+        "negative": 64,
+        "neutral": 108,
+        "positive": 13,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-11",
+        "negative": 119,
+        "neutral": 253,
+        "positive": 26,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-12",
+        "negative": 193,
+        "neutral": 290,
+        "positive": 92,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-13",
+        "negative": 199,
+        "neutral": 360,
+        "positive": 265,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-14",
+        "negative": 132,
+        "neutral": 319,
+        "positive": 171,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-15",
+        "negative": 263,
+        "neutral": 223,
+        "positive": 80,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-16",
+        "negative": 371,
+        "neutral": 324,
+        "positive": 49,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-17",
+        "negative": 403,
+        "neutral": 219,
+        "positive": 34,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-18",
+        "negative": 423,
+        "neutral": 288,
+        "positive": 93,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-19",
+        "negative": 257,
+        "neutral": 458,
+        "positive": 86,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-20",
+        "negative": 204,
+        "neutral": 448,
+        "positive": 74,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-21",
+        "negative": 222,
+        "neutral": 447,
+        "positive": 94,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-22",
+        "negative": 112,
+        "neutral": 228,
+        "positive": 107,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-23",
+        "negative": 93,
+        "neutral": 88,
+        "positive": 26,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-24",
+        "negative": 227,
+        "neutral": 146,
+        "positive": 19,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-25",
+        "negative": 303,
+        "neutral": 239,
+        "positive": 55,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-26",
+        "negative": 302,
+        "neutral": 266,
+        "positive": 75,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-27",
+        "negative": 374,
+        "neutral": 256,
+        "positive": 83,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-28",
+        "negative": 250,
+        "neutral": 204,
+        "positive": 57,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-29",
+        "negative": 76,
+        "neutral": 45,
+        "positive": 43,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-30",
+        "negative": 159,
+        "neutral": 136,
+        "positive": 21,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-10-31",
+        "negative": 296,
+        "neutral": 0,
+        "positive": 43,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-1",
+        "negative": 265,
+        "neutral": 240,
+        "positive": 81,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-2",
+        "negative": 180,
+        "neutral": 322,
+        "positive": 95,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-3",
+        "negative": 181,
+        "neutral": 224,
+        "positive": 80,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-4",
+        "negative": 163,
+        "neutral": 272,
+        "positive": 67,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-5",
+        "negative": 0,
+        "neutral": 295,
+        "positive": 60,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-6",
+        "negative": 142,
+        "neutral": 212,
+        "positive": 44,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-7",
+        "negative": 153,
+        "neutral": 134,
+        "positive": 26,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-8",
+        "negative": 191,
+        "neutral": 215,
+        "positive": 97,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-9",
+        "negative": 241,
+        "neutral": 0,
+        "positive": 110,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-10",
+        "negative": 122,
+        "neutral": 234,
+        "positive": 83,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-11",
+        "negative": 133,
+        "neutral": 162,
+        "positive": 49,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-12",
+        "negative": 95,
+        "neutral": 134,
+        "positive": 38,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-13",
+        "negative": 87,
+        "neutral": 115,
+        "positive": 14,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-14",
+        "negative": 0,
+        "neutral": 83,
+        "positive": 18,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-15",
+        "negative": 158,
+        "neutral": 134,
+        "positive": 29,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-16",
+        "negative": 115,
+        "neutral": 136,
+        "positive": 39,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-17",
+        "negative": 119,
+        "neutral": 133,
+        "positive": 44,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-18",
+        "negative": 61,
+        "neutral": 85,
+        "positive": 44,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-19",
+        "negative": 72,
+        "neutral": 121,
+        "positive": 26,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-20",
+        "negative": 49,
+        "neutral": 41,
+        "positive": 18,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-21",
+        "negative": 58,
+        "neutral": 57,
+        "positive": 12,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-22",
+        "negative": 53,
+        "neutral": 77,
+        "positive": 28,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-23",
+        "negative": 56,
+        "neutral": 76,
+        "positive": 17,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-24",
+        "negative": 58,
+        "neutral": 92,
+        "positive": 33,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-25",
+        "negative": 58,
+        "neutral": 79,
+        "positive": 38,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-26",
+        "negative": 38,
+        "neutral": 50,
+        "positive": 30,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-27",
+        "negative": 34,
+        "neutral": 39,
+        "positive": 13,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-28",
+        "negative": 56,
+        "neutral": 48,
+        "positive": 17,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-29",
+        "negative": 130,
+        "neutral": 84,
+        "positive": 50,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-11-30",
+        "negative": 88,
+        "neutral": 84,
+        "positive": 37,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-12-1",
+        "negative": 78,
+        "neutral": 78,
+        "positive": 30,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-12-2",
+        "negative": 63,
+        "neutral": 92,
+        "positive": 37,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-12-3",
+        "negative": 285,
+        "neutral": 157,
+        "positive": 90,
+        "keyword": "climate policy"
+    },
+    {
+        "date": "2021-12-4",
+        "negative": 172,
+        "neutral": 123,
+        "positive": 46,
+        "keyword": "climate policy"
+    }
+]
